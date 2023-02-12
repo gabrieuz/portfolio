@@ -2,6 +2,8 @@ import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Text } from "@/styles/Text";
 
+
+
 export const ProjectStack = styled(Flex, {
   margin: "1.25rem 0 1.25rem 0",
   "@mobileLittle": {
@@ -42,40 +44,44 @@ export const ProjectLink = styled("a", {
 export const ProjectTitle = styled(Text, {});
 
 export const Project = styled("article", {
+	border: "1px solid $grey2",
+  borderRadius: "var(--radii-1)",
   marginTop: "4rem",
-  [`&:first-child`]: {
-    [`& ${ProjectTitle}:first-child`]: {
-      position: "relative",
-      width: "max-content",
+  padding: "1.5rem",
 
-      "@mobile": {
-        width: "auto",
-      },
+	[`&:first-child`]: {
+		[`& ${ProjectTitle}:first-child`]: {
+			position: "relative",
+			width: "max-content",
 
-      "&::before": {
-        content: 'New',
-        position: "absolute",
-        top: "5px",
-        right: "-4rem",
-        width: "max-content",
-        height: "28px",
-        backgroundColor: "$brand1",
-        padding: "0px 8px",
-        borderRadius: "var(--radii-1)",
-        fontSize: "14px",
-        color: "var(--colors-whiteFixed)",
-        fontWeight: "400",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        fontFamily: "Inter",
+			"@mobile": {
+				width: "auto",
+			},
 
-        "@mobile": {
-          letf: 0,
-          top: "-2.5rem",
-          right: "auto",
-        },
-      },
-    },
-  },
+			"&::before": {
+				content: "New",
+				position: "absolute",
+				top: "5px",
+				right: "-4rem",
+				width: "max-content",
+				height: "28px",
+				backgroundColor: "$brand1",
+				padding: "0px 8px",
+				borderRadius: "var(--radii-1)",
+				fontSize: "14px",
+				color: "var(--colors-whiteFixed)",
+				fontWeight: "400",
+				display: "flex",
+				alignItems: "center",
+				justifyContent: "center",
+				fontFamily: "Inter",
+
+				"@mobile": {
+					letf: 0,
+					top: "-2.5rem",
+					right: "auto",
+				},
+			},
+		},
+	},
 });

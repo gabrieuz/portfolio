@@ -30,12 +30,12 @@ export const ContactSectionText = styled("aside", {
 });
 
 export const ContactsCards = styled("div", {
-  display: "flex",
-  flexDirection: "column",
-  width: "50%",
-  "@mobile": {
-    width: "100%",
-  },
+	display: "flex",
+	flexDirection: "column",
+	width: "50%",
+	"@mobile": {
+		width: "100%",
+	},
 });
 
 export const ContactCard = styled("div", {
